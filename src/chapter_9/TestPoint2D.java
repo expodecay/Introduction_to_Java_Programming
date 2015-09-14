@@ -26,3 +26,12 @@ public class TestPoint2D {
         System.out.println("The distance between p1 and p2 is " + p1.distance(p2));
     }
 }
+/**
+ *              javafx.geometry.Print2D
+ *   +Point2D(x: double, y: double)
+ *   +distance(x: double, y: double): double
+ *   +distance(p: Point2D): double
+ *   +getX(): double
+ *   +getY(): double
+ *   +toString(): String
+ * */
