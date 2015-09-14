@@ -3,15 +3,16 @@ package chapter_9;
 /**
  * pg. 339
  * Created by Rick on 8/17/2015.
- * Note that if you compile this program, CircleWithStaticMembers.java will automatically compile it.
- * Also, c1.numberOfObjects can be replaced with CircleWithStaticMembers.numberOfObjects
- *      or CircleWithStaticMembers.getNumberOfObjects().
+ * Note that if you compile this program, CircleWithStaticMembers.java will automatically compile as well if it hasn't
+ * already
+ * Also, c1.numberOfObjects can be replaced with CircleWithStaticMembers.numberOfObjects or CircleWithStaticMembers.getNumberOfObjects().
+ * This is because Static methods and data can be accessed from a reference variable or from their class name.
  */
 public class TestCircleWithStaticMembers {
     /** Main method */
     public static void main(String[] args) {
         System.out.println("Before creating objects");
-        System.out.println("The number of Circle objects is " + CircleWithStaticMembers.numberOfObjects);
+        System.out.println("The number of Circle objects is " + CircleWithStaticMembers.numberOfObjects); // Static variables can be accessed without creating an object
 
         // Create c1
         CircleWithStaticMembers c1 = new CircleWithStaticMembers();
