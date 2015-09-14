@@ -14,7 +14,7 @@ package chapter_9;
  * are affected.
  *
  * Constants are shared by all objects of the class and are declared using the modifiers: final static
- *      final static double PI - 3.14159;
+ *      final static double PI = 3.14159;
  */
 public class CircleWithStaticMembers {
     /** The radius of the circle */
