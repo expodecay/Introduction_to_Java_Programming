@@ -34,4 +34,5 @@ public class TestPoint2D {
  *   +getX(): double
  *   +getY(): double
  *   +toString(): String
+ *
  * */
