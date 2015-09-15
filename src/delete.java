@@ -10,6 +10,5 @@ public class delete {
     }
     public static void printCircle(CircleWithPrivateDataFields c){
         System.out.println("The area of the circle of radius " + c.getRadius() + " is " + c.getArea());
-
     }
 }
