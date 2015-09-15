@@ -7,6 +7,7 @@ public class delete {
     public static void main(String[] args) {
         CircleWithPrivateDataFields myCircle = new CircleWithPrivateDataFields();
         printCircle(myCircle);
+        System.out.println("ass n' titties");
     }
     public static void printCircle(CircleWithPrivateDataFields c){
         System.out.println("The area of the circle of radius " + c.getRadius() + " is " + c.getArea());
