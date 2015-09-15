@@ -3,6 +3,8 @@ package chapter_9;
 /**
  * pg. 348
  * Created by Rick on 8/20/2015.
+ * Demonstrates the difference between passing a primitive type value and passing a reference value. The program passes
+ * a circleWithPrivateDataFields object myCircle and an integer value from n to invoke printAreas(myCircle, n)
  */
 public class TestPassObject {
     /** Main method */
