@@ -12,6 +12,8 @@ public class TestPassObject {
         // Create a Circle object with radius 1
         CircleWithPrivateDataFields myCircle = new CircleWithPrivateDataFields(1);
 
+        System.out.println("The radius is initially " + myCircle.getRadius() + "\n");
+
         // Print areas for radius 1, 2, 3, 4, and 5.
         int n = 5;
         printAreas(myCircle, n);
@@ -31,3 +33,18 @@ public class TestPassObject {
         }
     }
 }
+/*
+* see section 7.6 for details
+* When passing an object of the primitive type, the value of the argument is passed. In this case, the value of n(5) is
+* passed to times. Inside the printAreas method, the content of times is changed. This does not affect the content of n.
+*
+* When passing an object of a reference type, the reference of the object is passed. In this case, c contains a
+* reference for the object that is also referenced by myCircle. Therefore, changing the properties of the object through
+* c inside the printAreas method has the same effect as doing so outside the method through the variable myCircle. Notice
+* that both myCircle.getRadius() and c.getRadius() both reference the same object.
+*
+* The difference here is that in the JVM primitive data types are stored in the stack and objects (references, arrays etc.)
+* are stored in the heap. The heap is used for dynamic memory allocation. see pg. 349 for the call stack of this program.
+*
+* For details on memory allocation, visit: http://www-ee.eng.hawaii.edu/~tep/EE160/Book/chap14/subsection2.1.1.8.html
+* */
