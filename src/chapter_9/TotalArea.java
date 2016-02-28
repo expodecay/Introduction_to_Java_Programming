@@ -27,4 +27,21 @@ public class TotalArea {
         // Return circle array
         return circleArray;
     }
+
+    public static void printCircleArray(CircleWithPrivateDataFields[] circleArray){
+        System.out.printf("%-30s%-15s\n", "Radius", "Area");
+        for(int i = 0; i<circleArray.length; i++){
+            System.out.printf("%-30s%-15s\n", circleArray[i].getRadius(), circleArray[i].getArea());
+        }
+        System.out.println("————————————————————————————————");
+
+        System.out.printf("%-30s%-15s\n", "The total area of circles is", sum(circleArray));
+    }
+    public static double sum(CircleWithPrivateDataFields[] circleArray){
+        double sum = 0;
+        for (int i = 0; i < circleArray.length; i++){
+            sum+=circleArray[i].getArea();
+        }
+        return sum;
+    }
 }

@@ -13,19 +13,19 @@ public class SelectionSort {
     public static double[] selectionSort(double[] list) {
         for (int i = 0; i < list.length - 1; i++){
             // Find the minimum in the list[i...list.length-1]
-            double currentMin = list[i];
+            double currentMin = list[i];    // Move along list calling left unsorted element currentMin
             int currentMinIndex = i;
 
             // Find the smallest item in the list
-            for (int j = i + 1; j < list.length; j++){
-                if (currentMin > list[j]){
-                    currentMin = list[j];
-                    currentMinIndex = j;
+            for (int j = i + 1; j < list.length; j++){  // Check each element to the right with the "currentMin"
+                if (currentMin > list[j]){             // If something smaller is found
+                    currentMin = list[j];              // call it the currentMin
+                    currentMinIndex = j;               // keep track of its location and keep checking the next elements.
                 }
             }
             // Swap list[i] with list[currentMinIndex] if necessary
-            if (currentMinIndex != i){
-                list[currentMinIndex] = list[i];
+            if (currentMinIndex != i){                  // If the currentMin is not located at left most unsorted position.
+                list[currentMinIndex] = list[i];        // swap them
                 list[i] = currentMin;
             }
         }

@@ -47,6 +47,7 @@ public class CircleWithPrivateDataFields {
     public double getArea(){
         return radius * radius * Math.PI;
     }
+
 }
 /**
  * A private data field cannot be accessed by an object from outside the class that defines the private field. However,
