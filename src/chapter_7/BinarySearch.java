@@ -25,6 +25,13 @@ public class BinarySearch {
         return -low - 1; // Now high < low, key not found
                         // Returns the index where the missing element would be located
     }
+
+    public static void main(String[] args) {
+        int[] list = {0,10,20,30,40,50,60,70,80,90};
+        int n = 60;
+        int bin = binarySearch(list, n);
+        System.out.println("Location of " + n + ":  " + "index " + bin);
+    }
 }
 /**
  * Notice that we are using int for everything. If the list = {1,2} and we're looking for the location of 2. Then,
